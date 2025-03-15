@@ -3,18 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Energy Optimization</title>
+    <title>SES Energy - Optimize Your Energy Usage</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Energy Optimization</h1>
+        <h1>Welcome to SES Energy</h1>
+        <p>Your guide to smart energy optimization.</p>
     </header>
     <main>
-        <p>Learn how to optimize energy use and reduce your carbon footprint.</p>
-        <button onclick="showMessage()">Click for Tips</button>
+        <h2>How We Help</h2>
+        <p>We provide energy-saving tips and analytics to reduce electricity costs.</p>
+
+        <h3>Energy Savings Calculator</h3>
+        <p>Enter your monthly electricity usage (kWh):</p>
+        <input type="number" id="usage" placeholder="e.g. 500">
+        <button onclick="calculateSavings()">Calculate Savings</button>
+        <p id="result"></p>
+
+        <button onclick="showMessage()">Click for an Energy Tip</button>
         <p id="message"></p>
     </main>
+    <footer>
+        <p>© 2024 SES Energy | All Rights Reserved</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
+

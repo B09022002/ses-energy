@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SES Energy - Smarter Energy Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to SES Energy</h1>
+        <p>Helping India reduce electricity costs & adopt sustainable energy.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#bill-estimator">Bill Estimator</a></li>
+            <li><a href="#appliance-recommendation">Smart Appliances</a></li>
+            <li><a href="#solar-calculator">Solar Savings</a></li>
+            <li><a href="#power-alerts">Power Cut Alerts</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="bill-estimator">
+            <h2>📊 Real-Time Electricity Bill Estimator</h2>
+            <p>Calculate your estimated monthly bill based on state-wise electricity rates.</p>
+            <label for="state">Select Your State:</label>
+            <select id="state">
+                <option value="7">Delhi (₹7/kWh)</option>
+                <option value="8">Maharashtra (₹8/kWh)</option>
+                <option value="6">Tamil Nadu (₹6/kWh)</option>
+                <option value="5">Uttar Pradesh (₹5/kWh)</option>
+            </select>
+            <input type="number" id="usage" placeholder="Enter Monthly Usage (kWh)">
+            <button onclick="calculateBill()">Estimate Bill</button>
+            <p id="bill-result"></p>
+        </section>
+
+        <section id="appliance-recommendation">
+            <h2>💡 Smart Appliance Recommendations</h2>
+            <p>Find the most energy-efficient appliances and see how much you can save!</p>
+            <select id="appliance">
+                <option value="fan">Ceiling Fan</option>
+                <option value="ac">Air Conditioner</option>
+                <option value="fridge">Refrigerator</option>
+                <option value="tv">Television</option>
+            </select>
+            <button onclick="recommendAppliance()">Find Best Energy-Saving Model</button>
+            <p id="appliance-result"></p>
+        </section>
+
+        <section id="solar-calculator">
+            <h2>🌞 Solar Savings & EMI Calculator</h2>
+            <p>Find out how much you can save with solar panels.</p>
+            <input type="number" id="solar-usage" placeholder="Monthly Electricity Usage (kWh)">
+            <button onclick="calculateSolarSavings()">Calculate Savings</button>
+            <p id="solar-result"></p>
+        </section>
+
+        <section id="power-alerts">
+            <h2>⚡ Live Power Cut & Voltage Fluctuation Alerts</h2>
+            <p>Check real-time power cut and voltage fluctuations in your area.</p>
+            <button onclick="checkPowerStatus()">Check Power Status</button>
+            <p id="power-status"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2024 SES Energy | Designed for India 🇮🇳</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
